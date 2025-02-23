@@ -9,13 +9,17 @@ spring:
   application:
     name: hello-batch-boot
   datasource:
-    url: jdbc:h2:tcp://localhost:9092/mem:test
+    url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
     username: sa
     password:
 #    platform: h2
 #    schema: classpath:schema.sql #可以自定义文件名,当有该配置项时,会被auto-configure执行
 #    data: classpath:data.sql #可以自定义文件名,当有该配置项时,会被auto-configure执行
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
   batch:
     job:
       enabled: true
