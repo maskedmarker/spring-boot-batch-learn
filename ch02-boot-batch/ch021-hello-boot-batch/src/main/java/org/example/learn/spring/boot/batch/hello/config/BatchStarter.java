@@ -7,7 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-@Component
+/**
+ * 可用通过编程方式启动job,也可以通过配置项spring.batch.job.names来完成
+ */
+//@Component
 public class BatchStarter implements CommandLineRunner {
 
     @Autowired

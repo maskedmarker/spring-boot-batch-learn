@@ -19,6 +19,7 @@ spring:
   batch:
     job:
       enabled: true
+      names: job1
 
 
 # logging

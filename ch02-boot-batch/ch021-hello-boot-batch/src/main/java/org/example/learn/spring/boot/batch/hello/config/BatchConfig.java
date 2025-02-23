@@ -45,8 +45,8 @@ public class BatchConfig {
     }
 
     @Bean
-    public Job job(JobBuilderFactory jobBuilderFactory, Step step1) {
-        return jobBuilderFactory.get("job")
+    public Job job1(JobBuilderFactory jobBuilderFactory, Step step1) {
+        return jobBuilderFactory.get("job1")
                 .start(step1)
                 .build();
     }
